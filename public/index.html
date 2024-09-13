@@ -17,16 +17,30 @@
             <div id="password-form">
                 <div class="mat-form-field">
                     <!-- Add label for password-->
+                    <label for="password-input" class="mat-form-field-label">Enter your new password:</label>
                     <!-- Add password input with eye icon, you can use the classes: password-input-wrapper, mat-input-element, material-icons password-toggle-->
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password-input" class="mat-input-element" required>
+                        <i class="material-icons password-toggle">visibility_off</i>
+                    </div>
                 </div>
                 <div class="mat-form-field">
                     <!-- Add label for confirm password-->
+                    <label for="confirm-password-input" class="mat-form-field-label">Confirm your new password:</label>
                     <!-- Add comfirm password input with eye icon, you can use the classes: password-input-wrapper, mat-input-element, material-icons password-toggle-->
+                    <div class="password-input-wrapper">
+                        <input type="password" id="confirm-password-input" class="mat-input-element" required>
+                        <i class="material-icons password-toggle">visibility_off</i>
+                    </div>
                 </div>
             </div>
             <!-- Add Set Password (Confirm) Button-->
             <!-- Add back Button-->
             <!-- Wrap both in button-container-->
+            <div class="button-container">
+                <button id="set-password-button" class="mat-raised-button mat-primary">Set Password</button>
+                <button id="cancel-button" class="mat-raised-button">Back</button>
+            </div>
         </div>
     </div>
     <script src="javascripts/index.js"></script>
