@@ -1,0 +1,126 @@
+/* Angular Material-like styles */
+:root {
+    --form-border-color: #000000; /* Default black color */
+    --primary-button-color: #3f51b5; /* Default Material Design primary color */
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.mat-app-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 2px solid var(--form-border-color);
+}
+
+.mat-h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.mat-error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.mat-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.mat-form-field-label {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.mat-input-element {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.mat-raised-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: var(--primary-button-color);
+}
+
+.mat-primary {
+    background-color: var(--primary-button-color);
+    color: white;
+}
+
+.mat-primary:hover {
+    background-color: var(--primary-button-color);
+}
+
+.mat-raised-button:not(.mat-primary) {
+    background-color: #fafafa;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-raised-button:not(.mat-primary):hover {
+    background-color: #e0e0e0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
